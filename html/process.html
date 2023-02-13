@@ -1,6 +1,6 @@
 <!--
-    Welcome to the info page! This is page functions as the index (home) page, as well as the source
-    for main information. 
+    Welcome to the Process page! This is page is to hold your videos and text describing your
+    process of making the IRL model of the Skyraider.
     
     Please go through this code and find Comments describing what to change in the code. Comment are
     green like what you are reading now. 
@@ -28,88 +28,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Information</title>
+    <title>Process</title>
     <link rel="stylesheet" href="/css/process.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="site-wrapper">
-        <h1 class="title">Process</h1>
-        <div class="content-container">
-            <div class="video-rack">
-                <div class="video-child">
-                    <video class="viedo-item" controls>
-                        <source src="/assetts/skyraider.mp4" alt="Douglas A1 Skyraider">
-                    </video>
-
-
-                    <!--Change video-caption. make sure to add a <br> where you want the lines to break!-->
-                    <p class="video-caption">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
-                        cumque,<br>
-                        ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
-                        laudantium
-                        tempora itaque nostrum?<br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
-                        cumque,<br>
-                        ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
-                        laudantium
-                        tempora itaque nostrum?
-                    </p>
-                </div>
-                <div class="video-child">
-                    <video class="viedo-item" controls>
-                        <source src="/assetts/skyraider.mp4" alt="Douglas A1 Skyraider">
-                    </video>
-
-                    <!--Change video-caption. make sure to add a <br> where you want the lines to break!-->
-                    <p class="video-caption">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
-                        cumque,<br>
-                        ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
-                        laudantium
-                        tempora itaque nostrum?<br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
-                        cumque,<br>
-                        ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
-                        laudantium
-                        tempora itaque nostrum?
-                    </p>
-                </div>
-                <div class="video-child">
-                    <video class="viedo-item" controls>
-                        <source src="/assetts/skyraider.mp4" alt="Douglas A1 Skyraider">
-                    </video>
-
-                    <!--Change video-caption. make sure to add a <br> where you want the lines to break!-->
-                    <p class="video-caption">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
-                        cumque,<br>
-                        ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
-                        laudantium
-                        tempora itaque nostrum?<br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
-                        cumque,<br>
-                        ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
-                        laudantium
-                        tempora itaque nostrum?
-                    </p>
-                </div>
+        <!--Navbar-->
+        <div class="navbar">
+            <div class="img-holder">
+                <img class="logo" src="/assetts/logo.png">
             </div>
-            <div class="sidebar">
-                <ul class="nav">
-                    <li class="nav-item"><a href="/html/overview.html">Overview</li>
-                    <li class="nav-item"><a href="/html/process.html">Process</li>
-                    <li class="nav-item"><a href="/html/sources.html">Sources</li>
+            <div class="nav-holder">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="/index.html">Home</a></li>
+                    <li class="nav-item"><a href="/html/process.html">Process</a></li>
+                    <li class="nav-item"><a href="/html/sources.html">Sources</a></li>
                 </ul>
             </div>
         </div>
+        <!--End Nav-->
+        <div class="content">
+            <div class="video-container">
+                <div class="video-child">
+                    <video width="400" height="220" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-child">
+                    <video width="400" height="220" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-child">
+                    <video width="400" height="220" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="text-container">
+                <!--Change subtitle and img-caption. make sure to add a <br> where you want the lines to break!-->
+                <h2 class="subtitle">Blah blah blah blah blah blah</h2>
+                <p class="info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
+                    cumque,<br>
+                    ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
+                    laudantium
+                    tempora itaque nostrum?<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
+                    cumque,<br>
+                    ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
+                    laudantium
+                    tempora itaque nostrum?
+                </p>
+                <!--Change subtitle and img-caption. make sure to add a <br> where you want the lines to break!-->
+                <h2 class="subtitle">Blah blah blah blah blah blah</h2>
+                <p class="info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
+                    cumque,<br>
+                    ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
+                    laudantium
+                    tempora itaque nostrum?<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
+                    cumque,<br>
+                    ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
+                    laudantium
+                    tempora itaque nostrum?
+                </p>
+                <!--Change subtitle and img-caption. make sure to add a <br> where you want the lines to break!-->
+                <h2 class="subtitle">Blah blah blah blah blah blah</h2>
+                <p class="info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
+                    cumque,<br>
+                    ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
+                    laudantium
+                    tempora itaque nostrum?<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
+                    cumque,<br>
+                    ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
+                    laudantium
+                    tempora itaque nostrum?
+                </p>
+                <!--Change subtitle and img-caption. make sure to add a <br> where you want the lines to break!-->
+                <h2 class="subtitle">Blah blah blah blah blah blah</h2>
+                <p class="info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
+                    cumque,<br>
+                    ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
+                    laudantium
+                    tempora itaque nostrum?<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
+                    cumque,<br>
+                    ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
+                    laudantium
+                    tempora itaque nostrum?
+                </p>
+                <!--Change subtitle and img-caption. make sure to add a <br> where you want the lines to break!-->
+                <h2 class="subtitle">Blah blah blah blah blah blah</h2>
+                <p class="info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
+                    cumque,<br>
+                    ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
+                    laudantium
+                    tempora itaque nostrum?<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores deserunt veritatis
+                    cumque,<br>
+                    ullam odit quibusdam soluta quae dolor neque porro expedita ipsam veniam voluptatem. Porro
+                    laudantium
+                    tempora itaque nostrum?
+                </p>
+            </div>
+        </div>
+        <div class="credits">
+            <div class="links">
+                <h3 class="link-title">Links</h3>
+                <a class="link-item" href="https://github.com/vlad-industries/skyraider"><i
+                        class="ri-github-fill">GitHub</i></a>
+                <a class="link-item" href="https://discord.gg/WBEREuW582"><i class="ri-discord-fill">Discord</i></a>
+                <a class="link-item" href="mailto:peyton.noriyuki@sageintl.org"><i class="ri-mail-line">E-Mail</i></a>
+            </div>
+            <div class="credit-names">
+                <h3 class="credit-title">Credit</h3>
+                <h5 class="name">
+                    Peyton Noriyuki -
+                    <br>Project Manager, model builder, CSS
+                    <br><br>Keagan Noriyuki -
+                    <br>HTML, Javascript, IT
+                </h5>
+            </div>
+            <div class="usage">
+                <h3 class="usage-title">Usage</h3>
+                <h5>
+                    All information and assetts are open source and cited properly under<br>
+                    the bibliography page. This site is for educational purposes only and is<br>
+                    completely non-profit. This site is free to take information from or use<br>
+                    in any manner under the GNU public license.
+                </h5>
+            </div>
+        </div>
     </div>
-
-
-
-
-
 </body>
 
 </html>

@@ -8,13 +8,19 @@ Make sure that there is a ; after the color code!
 */
 
 :root{
-    --background-color: #2f2f2f;
+    --background-color: #bdb9b9;
+    --border-color: #2f2f2f;
+    --left-color: #525252;
+    --right-color: #828181;
+    --nav-color: #2f2f2f;
+    --link-color: #ffff;
     --text-color: #2f2f2f;
     --sidebar-color: #2f2f2f;
     --text-background: #2f2f2f;
     --image-background: #2f2f2f;
     --video-background: #2f2f2f;
     --buttons-color: #2f2f2f;
+    --credit-color: #868686;
 }
 
 /* Ask me if you want to change any of the other styling! */
@@ -24,11 +30,13 @@ Make sure that there is a ; after the color code!
     list-style: none;
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Tinos', serif;
 }
 
 body{
-    height: 200vh;
+    height: 170vh;
     width: 100%;
+    background-color: var(--background-color);
 }
 
 .title{
@@ -47,7 +55,6 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
     top: 10vh;
 }
 
@@ -58,38 +65,81 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
     top: 10vh;
 }
 
+/* Navbar */
+
+.navbar{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 10vh;
+    width: 100%;
+    background-color: var(--nav-color);
+    z-index: 999;
+}
+
+.active a{
+    color: #9b5858;
+}
+
+.img-holder{
+    width: 10%;
+}
+
+.nav-holder{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.nav-item{
+    margin: 50px;
+    text-decoration: underline;
+}
+
+.nav-item a{
+    color: var(--link-color);
+    font-size: x-large;
+}
+
+/* End navbar */
+
 .header-img{
-    margin: 5px;
+    position: relative;
+    margin: 25px;
+    height: 130vh;
     width: 35%;
+    background-color: var(--left-color);
 }
 
 .img-item{
-    border-radius: 15px;
+    max-width: 100%;
+    max-height: 100%;
+    border: 10px solid var(--border-color);
+}
+
+.img-item2{
+    max-width: 70%;
+    max-height: 70%;
+    border: 10px solid var(--border-color);
 }
 
 .header-info{
+    position: relative;
     width: 50%;
+    height: 130vh;
     margin: 25px;
-}
-
-.sidebar{
-    display: flex;
-    width: 25%;
-    margin: 5px;
-    text-align: center;
-    justify-content: flex-end;
-}
-
-.nav{
-    padding: 0;
-    width: 50%;
-    height: 100%;
-    left: 0;
-    background-color: grey;
+    background-color: var(--right-color);
 }
 
 .info-section{
@@ -100,21 +150,51 @@ body{
     margin: 20px;
 }
 
-.video-rack{
+
+.credits{
+    bottom: -70vh;
+    display: flex;
+    position: absolute;
     width: 100%;
-    height: 50vh;
+    height: 20vh;
+    justify-content: center;
+    background-color: var(--credit-color);
+}
+
+.links{
+    width: 25%;
     display: flex;
     flex-direction: column;
 }
 
-.video-child{
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
+.link-title{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-decoration: underline;
 }
 
-.video-caption{
-    position: relative;
-    bottom: 0;
-    margin: 15px;
+.link-item{
+    margin: 7px;
+    color: var(--text-color);
 }
+
+.credit-names{
+    width: 50%;
+    text-align: center;
+}
+
+.credit-title{
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.usage{
+    width: 25%;
+}
+
+.usage-title{
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-align: center;
+}
+
